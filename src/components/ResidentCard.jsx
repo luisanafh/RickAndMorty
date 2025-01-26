@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import useFetchApi from '../hooks/UsefechtApi';
+import useFetchApi from '../hooks/useFetchApi';
 import './ResidentCard.scss';
 function ResidentCard({ url }) {
 	const { data: resident, request, pending, error } = useFetchApi();

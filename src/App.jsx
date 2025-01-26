@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import LocationCard from './components/LocationCard';
-import useFetchApi from './hooks/UsefechtApi';
+import useFetchApi from './hooks/useFetchApi';
 import SearchForm from './components/SearchForm';
 import { randomId } from './utils';
 import ResidentsListPagination from './components/ResidentListPagination';
