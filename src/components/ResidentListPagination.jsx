@@ -1,5 +1,5 @@
 import usePagination from '../hooks/usePagination';
-import Pagination from './pagination';
+import Pagination from './Pagination';
 import ResidentsList from './ResidentsList';
 
 function ResidentsListPagination({ pending, residents }) {
