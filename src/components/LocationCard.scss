@@ -1,0 +1,35 @@
+
+.location{
+  padding-bottom: 3em;
+
+  &__content{
+    background-color: #00000034;
+    color: white;
+    max-width: 400px;
+    width: 90%;
+    padding: 2em 1.5em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 2px black;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+  &__name{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+    text-align: center;
+    
+  }
+  &__details{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &-span{
+      display: block;
+      font-size: 12px;
+      color: #ccccccb9;
+    }
+  }
+}

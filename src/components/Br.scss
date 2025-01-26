@@ -1,0 +1,61 @@
+:root {
+  --background: hsl(189, 80%, 10%);
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background: radial-gradient(
+          60vmax 60vmax at 0% 0%,
+          hsl(86, 52%, 46% / 0.9) 0%,
+          hsl(240 100% 2% / 0) 95%
+      ),
+      radial-gradient(
+          80vmax 50vmax at 110% -10%,
+          hsl(175 100% 60% / 0.9) 0%,
+          hsl(200 100% 50% / 0.5) 50%,
+          hsl(240 100% 50% / 0) 95%
+      ),
+      radial-gradient(
+          90vmax 50vmax at 50vmax 50vmax,
+          hsl(189, 80%, 10% / 0.9) 0%,
+          hsl(240 100% 60% / 0) 95%
+      ),
+      var(--background);
+      background-attachment: fixed;
+}
+
+::selection {
+  color: hsl(0 0% 100%);
+  background-color: hsl(86, 52%, 46%);
+}
+
+.star {
+  position: absolute;
+  width:4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(0) translateX(0);
+  }
+  100% {
+      transform: translateY(100vh) translateX(100vw);
+  }
+}

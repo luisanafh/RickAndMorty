@@ -1,0 +1,32 @@
+
+.search{
+  padding: 3em 0 2.5em ;
+  text-align: center;
+  &__input{
+    background-color: white;
+    padding: .4em 1em;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 3px 3px 5px black;
+  }
+  
+  &__btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: .4em 1em;
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 3px 3px 5px black;
+    
+    &:hover {
+      background-color: var(--secundary-color);
+  }
+  }
+  &__error{
+    margin-top: .75em;
+    color: rgb(255, 105, 105);
+    font-size: small;
+  }
+}

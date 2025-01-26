@@ -1,0 +1,57 @@
+.footer {
+  background-color: #050404bb;
+  width: 100%;
+  padding: 40px 0;
+  margin: 0;
+  margin-top: 2em;
+
+  &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+
+      @media (min-width: 768px) {
+          flex-direction: row;
+      }
+  }
+}
+
+.gif {
+  border-radius: 80%;
+  opacity: 0.8;
+  width: 300px;
+
+  @media (min-width: 768px) {
+      height: 300px;
+      width: auto;
+  }
+}
+
+.title {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font-family: 'Get Schwifty';
+  font-size: 40px;
+  color: #08bae3;
+  -webkit-text-stroke: 0.8px #fff765;
+  text-shadow: 3px 10px 0px black;
+  @media (min-width: 768px) {
+    font-size: 60px;
+}
+  &__span{
+    font-size: 20px;
+    @media (min-width: 768px) {
+    font-size: 40px ;
+  }
+  }
+
+  
+}
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
