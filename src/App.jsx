@@ -6,7 +6,7 @@ import { randomId } from './utils';
 import ResidentsListPagination from './components/ResidentListPagination';
 import Br from './components/Br';
 import Footer from './components/Footer';
-import Header from './components/header';
+import Header from './components/Header';
 
 const baseUrl = 'https://rickandmortyapi.com/api';
 function App() {
